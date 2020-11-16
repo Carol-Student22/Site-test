@@ -1,0 +1,123 @@
+.header-background {
+  height: 80vh;
+  background-image: url(/media/Night-img.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header-text-box {
+  text-align: center;
+  padding: 20rem 6rem 0rem 6rem;
+}
+
+.header-primary-main {
+  font-size: 5rem;
+  color: #fdfdfd;
+  text-shadow: 0.2rem 0.1rem black;
+}
+
+.header-primary-sub {
+  font-size: 2rem;
+  color: #c8ffd1;
+  text-shadow: 0.2rem 0.1rem #b50000;
+}
+
+.header-main-btn,
+.header-main-btn:link,
+.header-main-btn:visited {
+  text-decoration: none;
+  padding: 0.7rem 1.5rem;
+  margin: 1rem auto;
+  font-size: 1.5rem;
+  border-radius: 5rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 1vh;
+  width: 10rem;
+}
+
+.header-primary-btn {
+  color: white;
+  background-color: #6f1313;
+}
+
+.header-main-btn:hover {
+  color: black;
+  background-color: #ffc6c6;
+  -webkit-box-shadow: 0rem 0.2rem #490000;
+          box-shadow: 0rem 0.2rem #490000;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  overflow: hidden;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(42, 2, 2, 0.8)));
+  background-image: linear-gradient(to bottom, rgba(42, 2, 2, 0.8));
+  color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navigation a {
+  color: white;
+  float: left;
+  padding: 1.4vh 1.6vh;
+  text-decoration: none;
+  font-size: 1.8rem;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+}
+
+.navigation a:hover {
+  background: #ddd;
+  color: black;
+}
+
+.cities {
+  border-left: 0.5vh #ddd solid;
+  border-right: 0.5vh #ddd solid;
+}
+
+.food {
+  border-left: 0.5vh #ddd solid;
+  border-right: 0.5vh #ddd solid;
+}
+
+.italyimage1 {
+  height: 8rem;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 62.5%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/*# sourceMappingURL=main.css.map */

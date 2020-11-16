@@ -1,0 +1,42 @@
+@import "_variables.scss";
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  overflow: hidden;
+  background-image: linear-gradient(to bottom, rgba(color(navbar), 0.8));
+  color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navigation a {
+  color: white;
+  float: left;
+  padding: 1.4vh 1.6vh;
+  text-decoration: none;
+  font-size: 1.8rem;
+  transition: all 0.1s;
+}
+
+.navigation a:hover {
+  background: #ddd;
+  color: black;
+}
+
+.cities {
+  border-left: 0.5vh #ddd solid;
+  border-right: 0.5vh #ddd solid;
+}
+
+.food {
+  border-left: 0.5vh #ddd solid;
+  border-right: 0.5vh #ddd solid;
+}
+
+.italyimage1 {
+  height: 8rem;
+}

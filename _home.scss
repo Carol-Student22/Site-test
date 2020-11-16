@@ -1,0 +1,51 @@
+.header-background {
+  height: 80vh;
+  background-image: url(/media/Night-img.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header-text-box {
+  text-align: center;
+  padding: 20rem 6rem 0rem 6rem;
+  //padding-bottom: 0;
+}
+.header-primary-main {
+  font-size: 5rem;
+  color: rgb(253, 253, 253);
+  text-shadow: 0.2rem 0.1rem rgb(0, 0, 0);
+}
+.header-primary-sub {
+  font-size: 2rem;
+  color: rgb(200, 255, 209);
+  text-shadow: 0.2rem 0.1rem rgb(181, 0, 0);
+}
+
+.header-main-btn,
+.header-main-btn:link,
+.header-main-btn:visited {
+  text-decoration: none;
+  padding: 0.7rem 1.5rem;
+  margin: 1rem auto;
+  font-size: 1.5rem;
+  border-radius: 5rem;
+  transition: all 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1vh;
+  width: 10rem;
+}
+
+.header-primary-btn {
+  color: rgb(255, 255, 255);
+  background-color: rgb(111, 19, 19);
+}
+
+.header-main-btn:hover {
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 198, 198);
+  box-shadow: 0rem 0.2rem rgb(73, 0, 0);
+  transform: scale(1.1);
+}

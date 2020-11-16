@@ -1,0 +1,6 @@
+$colors: (
+  navbar: #2a0202,
+);
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}
