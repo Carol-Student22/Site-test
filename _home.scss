@@ -1,14 +1,27 @@
+@import "_variables";
+
 .header-background {
   height: 80vh;
-  background-image: url(/media/Night-img.jpg);
+  background-image: linear-gradient(
+      rgba(color(home-gradient1), 0.3),
+      rgba(color(home-gradient2), 0.5)
+    ),
+    url(/media/Night-img.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .header-text-box {
-  text-align: center;
-  padding: 20rem 6rem 0rem 6rem;
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+
   //padding-bottom: 0;
 }
 .header-primary-main {
@@ -32,10 +45,10 @@
   border-radius: 5rem;
   transition: all 0.3s;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
   height: 1vh;
-  width: 10rem;
+  width: 7.5rem;
 }
 
 .header-primary-btn {

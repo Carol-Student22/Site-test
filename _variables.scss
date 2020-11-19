@@ -1,5 +1,7 @@
 $colors: (
   navbar: #2a0202,
+  home-gradient1: #803838,
+  home-gradient2: #1f0606,
 );
 @function color($color-name) {
   @return map-get($colors, $color-name);
