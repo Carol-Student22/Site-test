@@ -1,3 +1,7 @@
+h1 {
+  margin: 0 auto;
+}
+
 .header-background {
   height: 80vh;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(128, 56, 56, 0.3)), to(rgba(31, 6, 6, 0.5))), url(/media/Night-img.jpg);
@@ -28,15 +32,19 @@
 }
 
 .header-primary-main {
-  font-size: 5rem;
-  color: #fdfdfd;
-  text-shadow: 0.2rem 0.1rem black;
+  font-size: 7rem;
+  color: #fffafa;
+  text-shadow: 0.2rem 0.1rem #2b0000;
+  padding-bottom: 1rem;
+  font-family: "Roboto Slab", serif;
 }
 
 .header-primary-sub {
-  font-size: 2rem;
-  color: #c8ffd1;
-  text-shadow: 0.2rem 0.1rem #b50000;
+  font-size: 4rem;
+  color: #fffafa;
+  text-shadow: 0.2rem 0.1rem #2b0000;
+  padding-bottom: 3rem;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .header-main-btn,
@@ -45,7 +53,7 @@
   text-decoration: none;
   padding: 0.7rem 1.5rem;
   margin: 1rem auto;
-  font-size: 1.5rem;
+  font-size: 2rem;
   border-radius: 5rem;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -59,11 +67,15 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 1vh;
-  width: 7.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 2vh;
+  width: 10rem;
 }
 
-.header-primary-btn {
+.header-primary-btn,
+.header-primary-btn::after {
   color: white;
   background-color: #6f1313;
 }
@@ -71,10 +83,25 @@
 .header-main-btn:hover {
   color: black;
   background-color: #ffc6c6;
-  -webkit-box-shadow: 0rem 0.2rem #490000;
-          box-shadow: 0rem 0.2rem #490000;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-box-shadow: 0rem 0.3rem #490000;
+          box-shadow: 0rem 0.3rem #490000;
+  -webkit-transform: scale(1.13);
+          transform: scale(1.13);
+}
+
+@media only screen and (max-width: 600px) {
+  body .header-primary-main {
+    font-size: 6rem;
+    color: #fffafa;
+    text-shadow: 0.2rem 0.1rem #2b0000;
+    padding-bottom: 1rem;
+  }
+  body .header-primary-sub {
+    font-size: 3rem;
+    color: #fffafa;
+    text-shadow: 0.2rem 0.1rem #2b0000;
+    padding-bottom: 3rem;
+  }
 }
 
 .navbar {
@@ -92,22 +119,22 @@
       -ms-flex-direction: row;
           flex-direction: row;
   overflow: hidden;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(42, 2, 2, 0.8)));
-  background-image: linear-gradient(to bottom, rgba(42, 2, 2, 0.8));
-  color: white;
+  background-color: #2a0202;
+  color: #ddd;
   position: fixed;
   top: 0;
   width: 100%;
 }
 
 .navigation a {
-  color: white;
+  color: #ddd;
   float: left;
   padding: 1.4vh 1.6vh;
   text-decoration: none;
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .navigation a:hover {
@@ -125,8 +152,38 @@
   border-right: 0.5vh #ddd solid;
 }
 
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
 .italyimage1 {
-  height: 8rem;
+  height: 12vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.visititalia {
+  font-size: 8vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Dancing Script", cursive;
 }
 
 html,
