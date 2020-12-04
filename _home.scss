@@ -3,9 +3,8 @@
 h1 {
   margin: 0 auto;
 }
-
 .header-background {
-  height: 80vh;
+  height: 100vh;
   background-image: linear-gradient(
       rgba(color(home-gradient1), 0.3),
       rgba(color(home-gradient2), 0.5)
@@ -14,28 +13,26 @@ h1 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.header-text-box {
-  position: relative;
-  overflow: hidden;
-  white-space: nowrap;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 80vh;
-  //padding-bottom: 0;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
 .header-primary-main {
   font-size: 7rem;
   color: $home-head-light;
   text-shadow: 0.2rem 0.1rem $home-head-dark;
   padding-bottom: 1rem;
-  font-family: $home-mainFont;
+  font-family: $mainFont;
 }
 .header-primary-sub {
-  font-size: 4rem;
+  text-align: center;
+  font-size: 3rem;
   color: $home-head-light;
   text-shadow: 0.2rem 0.1rem $home-head-dark;
   padding-bottom: 3rem;
@@ -46,15 +43,11 @@ h1 {
 .header-main-btn:link,
 .header-main-btn:visited {
   text-decoration: none;
-  padding: 0.7rem 1.5rem;
+  padding: 0.7rem 1rem;
   margin: 1rem auto;
   font-size: 2rem;
   border-radius: 5rem;
   transition: all 0.3s;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   height: 2vh;
   width: 10rem;
 }
@@ -73,7 +66,7 @@ h1 {
 }
 
 //media
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   body {
     .header-primary-main {
       font-size: 6rem;
@@ -82,10 +75,43 @@ h1 {
       padding-bottom: 1rem;
     }
     .header-primary-sub {
-      font-size: 3rem;
+      font-size: 2rem;
       color: $home-head-light;
       text-shadow: 0.2rem 0.1rem $home-head-dark;
       padding-bottom: 3rem;
+    }
+
+    .header-main-btn,
+    .header-main-btn:link,
+    .header-main-btn:visited {
+      padding: 0.4rem 0.7rem;
+      margin: 0.7rem auto;
+      font-size: 1.8rem;
+      border-radius: 5rem;
+      transition: all 0.3s;
+      height: 2vh;
+      width: 8rem;
+    }
+  }
+}
+
+@media only screen and (max-width: $phoneportrait) {
+  body {
+    .header-background {
+      height: 100vh;
+    }
+    .header-primary-main {
+      font-size: 5.5rem;
+      color: $home-head-light;
+      text-shadow: 0.2rem 0.1rem $home-head-dark;
+      padding-bottom: 1rem;
+
+      .header-primary-sub {
+        font-size: 1rem;
+        color: $home-head-light;
+        text-shadow: 0.2rem 0.1rem $home-head-dark;
+        padding-bottom: 1rem;
+      }
     }
   }
 }

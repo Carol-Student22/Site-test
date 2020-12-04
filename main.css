@@ -3,18 +3,12 @@ h1 {
 }
 
 .header-background {
-  height: 80vh;
+  height: 100vh;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(128, 56, 56, 0.3)), to(rgba(31, 6, 6, 0.5))), url(/media/Night-img.jpg);
   background-image: linear-gradient(rgba(128, 56, 56, 0.3), rgba(31, 6, 6, 0.5)), url(/media/Night-img.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.header-text-box {
-  position: relative;
-  overflow: hidden;
-  white-space: nowrap;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -28,7 +22,10 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 80vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .header-primary-main {
@@ -36,11 +33,12 @@ h1 {
   color: #fffafa;
   text-shadow: 0.2rem 0.1rem #2b0000;
   padding-bottom: 1rem;
-  font-family: "Roboto Slab", serif;
+  font-family: "Dancing Script", cursive;
 }
 
 .header-primary-sub {
-  font-size: 4rem;
+  text-align: center;
+  font-size: 3rem;
   color: #fffafa;
   text-shadow: 0.2rem 0.1rem #2b0000;
   padding-bottom: 3rem;
@@ -51,25 +49,12 @@ h1 {
 .header-main-btn:link,
 .header-main-btn:visited {
   text-decoration: none;
-  padding: 0.7rem 1.5rem;
+  padding: 0.7rem 1rem;
   margin: 1rem auto;
   font-size: 2rem;
   border-radius: 5rem;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   height: 2vh;
   width: 10rem;
 }
@@ -89,7 +74,7 @@ h1 {
           transform: scale(1.13);
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   body .header-primary-main {
     font-size: 6rem;
     color: #fffafa;
@@ -97,20 +82,44 @@ h1 {
     padding-bottom: 1rem;
   }
   body .header-primary-sub {
-    font-size: 3rem;
+    font-size: 2rem;
     color: #fffafa;
     text-shadow: 0.2rem 0.1rem #2b0000;
     padding-bottom: 3rem;
   }
+  body .header-main-btn,
+  body .header-main-btn:link,
+  body .header-main-btn:visited {
+    padding: 0.4rem 0.7rem;
+    margin: 0.7rem auto;
+    font-size: 1.8rem;
+    border-radius: 5rem;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    height: 2vh;
+    width: 8rem;
+  }
+}
+
+@media only screen and (max-width: 492px) {
+  body .header-background {
+    height: 100vh;
+  }
+  body .header-primary-main {
+    font-size: 5.5rem;
+    color: #fffafa;
+    text-shadow: 0.2rem 0.1rem #2b0000;
+    padding-bottom: 1rem;
+  }
+  body .header-primary-main .header-primary-sub {
+    font-size: 1rem;
+    color: #fffafa;
+    text-shadow: 0.2rem 0.1rem #2b0000;
+    padding-bottom: 1rem;
+  }
 }
 
 .navbar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -118,36 +127,64 @@ h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  align-items: center;
   background-color: #2a0202;
   color: #ddd;
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 100;
+}
+
+.menu {
+  text-align: center;
+  height: 70px;
+}
+
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #ddd;
+  font-size: 2.2rem;
+  font-family: "Josefin Sans", sans-serif;
+  padding: 13px 10px;
 }
 
 .navigation a {
-  color: #ddd;
-  float: left;
-  padding: 1.4vh 1.6vh;
-  text-decoration: none;
-  font-size: 2.2rem;
-  -webkit-transition: all 0.1s;
-  transition: all 0.1s;
+  clear: right;
   font-family: "Josefin Sans", sans-serif;
+  text-decoration: none;
+  padding: 10px 10px;
+  text-align: center;
+  color: #ddd;
+}
+
+label {
+  margin: 0 40px 0 0;
+  font-size: 26px;
+  line-height: 70px;
+  display: none;
+  width: 22px;
+  float: right;
+}
+
+#toggle {
+  display: none;
 }
 
 .navigation a:hover {
   background: #ddd;
-  color: black;
+  color: #2a0202;
 }
 
-.cities {
-  border-left: 0.5vh #ddd solid;
-  border-right: 0.5vh #ddd solid;
-}
-
-.food {
+.line {
   border-left: 0.5vh #ddd solid;
   border-right: 0.5vh #ddd solid;
 }
@@ -163,7 +200,7 @@ h1 {
 }
 
 .italyimage1 {
-  height: 12vh;
+  height: 9vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -173,7 +210,7 @@ h1 {
 }
 
 .visititalia {
-  font-size: 8vh;
+  font-size: 6vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -184,6 +221,266 @@ h1 {
       -ms-flex-align: center;
           align-items: center;
   font-family: "Dancing Script", cursive;
+}
+
+@media only screen and (max-width: 830px) {
+  label {
+    display: block;
+    margin: 0 20px 0 0;
+    cursor: pointer;
+  }
+  .navigation {
+    text-align: center;
+    width: 100%;
+    display: none;
+  }
+  .navigation a {
+    display: block;
+    margin: 0;
+    color: #ddd;
+    background-color: #2a0202;
+  }
+  #toggle:checked + .navigation {
+    display: block;
+  }
+  .line {
+    border: none;
+  }
+  .down {
+    border-bottom: 1px solid #ddd;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .visititalia {
+    font-size: 5vh;
+  }
+  .italyimage1 {
+    height: 7vh;
+  }
+}
+
+.statement {
+  position: relative;
+  background-color: #2a0202;
+  color: #e6e6e6;
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 0.3vw solid #e6e6e6;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(31, 6, 6, 0.5)), to(rgba(31, 6, 6, 0.5))), url(media/vacationtoremeber.jpg);
+  background-image: linear-gradient(rgba(31, 6, 6, 0.5), rgba(31, 6, 6, 0.5)), url(media/vacationtoremeber.jpg);
+  background-size: cover;
+}
+
+.vacationtoremember {
+  font-family: "Dancing Script", cursive;
+  font-size: 7vh;
+  margin-top: 1vw;
+}
+
+.quote {
+  margin-left: 2%;
+  margin-right: 2%;
+  font-size: 3vh;
+}
+
+.italynews {
+  font-size: 3vh;
+  margin-bottom: 1vw;
+}
+
+.relative {
+  position: relative;
+}
+
+.stripes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 100vh;
+  width: 100%;
+}
+
+.stripe {
+  width: 33.33333333%;
+  height: 100vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(31, 6, 6, 0.5)), to(rgba(31, 6, 6, 0.5)));
+  background-image: linear-gradient(rgba(31, 6, 6, 0.5), rgba(31, 6, 6, 0.5));
+}
+
+.stripe {
+  background-color: green;
+}
+
+.stripe2 {
+  background-color: #e6e6e6;
+}
+
+.stripe3 {
+  background-color: #d65b5b;
+}
+
+.eventholder {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 94%;
+  height: 90vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(42, 2, 2, 0.9)), to(rgba(42, 2, 2, 0.9)));
+  background-image: linear-gradient(rgba(42, 2, 2, 0.9), rgba(42, 2, 2, 0.9));
+  top: 5%;
+  left: 3%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  display: flex;
+  align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+
+.eventstitle {
+  position: relative;
+  font-size: 10rem;
+  color: #e6e6e6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Dancing Script", cursive;
+  text-align: center;
+}
+
+.eventsub {
+  position: relative;
+  text-align: center;
+  font-size: 3vh;
+  color: #e6e6e6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Josefin Sans", sans-serif;
+  width: 65vw;
+}
+
+.eve {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+}
+
+.even {
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.event1 {
+  width: 25vw;
+}
+
+.eventtext {
+  width: 22vw;
+  color: #e6e6e6;
+  font-size: 2vh;
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.event2 {
+  width: 25vw;
+}
+
+.event3 {
+  width: 25vw;
+}
+
+.even {
+  background-color: #1f0606;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.eve1 {
+  border: 0.4vw solid green;
+}
+
+.eve2 {
+  border: 0.4vw solid #e6e6e6;
+}
+
+.eve3 {
+  border: 0.4vw solid #d65b5b;
+}
+
+.eventtitles {
+  color: #e6e6e6;
+  font-family: "Dancing Script", cursive;
+  font-size: 3vh;
+}
+
+.eve:hover .even:not(:hover) {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.even:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 html,

@@ -1,0 +1,158 @@
+@import "_variables.scss";
+
+.statement {
+  position: relative;
+  background-color: (color(navbar));
+  color: #e6e6e6;
+  text-align: center;
+  font-family: $textFont;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  border: 0.3vw solid #e6e6e6;
+  background-image: linear-gradient(
+      rgba(color(home-gradient2), 0.5),
+      rgba(color(home-gradient2), 0.5)
+    ),
+    url(media/vacationtoremeber.jpg);
+  background-size: cover;
+}
+.vacationtoremember {
+  font-family: $mainFont;
+  font-size: 7vh;
+  margin-top: 1vw;
+}
+.quote {
+  margin-left: 2%;
+  margin-right: 2%;
+  font-size: 3vh;
+}
+.italynews {
+  font-size: 3vh;
+  margin-bottom: 1vw;
+}
+
+.relative {
+  position: relative;
+}
+
+.stripes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 100vh;
+  width: 100%;
+}
+.stripe {
+  width: 33.33333333%;
+  height: 100vh;
+  background-image: linear-gradient(
+    rgba(color(home-gradient2), 0.5),
+    rgba(color(home-gradient2), 0.5)
+  );
+}
+.stripe {
+  background-color: green;
+}
+.stripe2 {
+  background-color: #e6e6e6;
+}
+.stripe3 {
+  background-color: #d65b5b;
+}
+
+.eventholder {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 94%;
+  height: 90vh;
+  background-image: linear-gradient(
+    rgba(color(navbar), 0.9),
+    rgba(color(navbar), 0.9)
+  );
+  top: 5%;
+  left: 3%;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.eventstitle {
+  position: relative;
+  font-size: 10rem;
+  color: #e6e6e6;
+  display: flex;
+  justify-content: center;
+  font-family: $mainFont;
+  text-align: center;
+}
+.eventsub {
+  position: relative;
+  text-align: center;
+  font-size: 3vh;
+  color: #e6e6e6;
+  display: flex;
+  justify-content: center;
+  font-family: $textFont;
+  width: 65vw;
+}
+
+.eve {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 100%;
+}
+.even {
+  transition: all 0.4s;
+}
+.event1 {
+  width: 25vw;
+}
+.eventtext {
+  width: 22vw;
+  color: #e6e6e6;
+  font-size: 2vh;
+  text-align: center;
+  font-family: $textFont;
+}
+.event2 {
+  width: 25vw;
+}
+.event3 {
+  width: 25vw;
+}
+.even {
+  background-color: (color(home-gradient2));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.eve1 {
+  border: 0.4vw solid green;
+}
+.eve2 {
+  border: 0.4vw solid #e6e6e6;
+}
+.eve3 {
+  border: 0.4vw solid #d65b5b;
+}
+
+.eventtitles {
+  color: #e6e6e6;
+  font-family: $mainFont;
+  font-size: 3vh;
+}
+.eve:hover .even:not(:hover) {
+  filter: grayscale(100%);
+}
+.even:hover {
+  transform: scale(1.2);
+}

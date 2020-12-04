@@ -10,38 +10,75 @@
 <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet"> 
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link rel="preconnect" href="https://fonts.gstatic.com">
+
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@800;900&display=swap" rel="stylesheet">
 </head>
-<body>
-    <div class="navbar">
-        <div class="logo">
-            <img class="italyimage1"src="italy.jpeg" alt="">
-            <span class="visititalia">Visit Italia</span>
-        </div>
-        <div class="navigation">
-            <a class="home" href="#home">Home</a>
-            <a class= "cities" href="#cities">Cities</a>
-            <a class="places" href="#placestovisit">Places to Visit</a>
-            <a class= "food" href="#food">Food</a>
-            <a class= "aboutus" href="#aboutus">About Us</a>
-        </div>
+<body> 
+<div class="navbar">
+    <div class="logo">
+        <img class="italyimage1"src="italy.jpeg" alt="">
+        <span class="visititalia">Visit Italia</span>
     </div>
-    <header class="header">
-        <div class="header-background">
-            <div class="header-text-box">
-                    <h1 class="header-primary-main">Italy</h1>
-                    <h1 class="header-primary-sub">"Replace With Quote"</h1> 
-
-                    <div class="header-btn">
-                        <h2> <a href="#" class="header-main-btn header-primary-btn">Read More!</a> </h2>
-                    </div>
-
-            </div>
-
-            
-
-        </div>
-        
+<div class="menu">
+    <label for="toggle">&#9776</label>
+    <input type="checkbox" id="toggle"/>
+    <div class="navigation">
+        <a class="down"  href="#home">Home</a>
+        <a class="down line" href="#events">Events</a>
+        <a class="down" href="#placestovisit">Places to Visit</a>
+        <a class="down line" href="#food">Food</a>
+        <a href="#aboutus">About Us</a>
+    </div>
+</div>
+</div>
+    <header id="home" class="header" aria-label="Home Page. Background Image of  A Nigltly View of Italy.">
+        <div class="header-background" >
+            <h1 class="header-primary-main">Italy</h1>
+            <h1 class="header-primary-sub">" Lorem ipsum dolor sit amet consectetur adipisicing elit."</h1> 
+           
+           <h2> <a href="#" class="header-main-btn header-primary-btn" aria-label="Read More About Italy">Read More!</a> </h2>
+           
+        </div> 
+    
     </header>
+
+
+    <div class="statement">
+        <span class="vacationtoremember">A Vacation to Remember</span>
+        <p  class="quote">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti inventore voluptate error ipsam sit dicta officia aperiam, in distinctio necessitatibus nam voluptas tenetur sunt, nobis reprehenderit assumenda beatae fugiat qui? </p>
+        <span class="italynews">~The Italy News</span>
+    </div>
+
+
+    <div class="relative">
+    <div>
+    <div class="stripes">
+        <div class="stripe stripe1"></div>
+        <div class="stripe stripe2"></div> 
+        <div class="stripe stripe3"></div>
+    </div>
+    <div class="eventholder">
+        <span class="eventstitle">Events</span>
+        <span class="eventsub">Italy is a very lively country with many places to adventure to and admire. Here are some of the upcoming events in Italy.</span>
+        <div class="eve">
+            <div class="even eve1 ">
+                <img src="media/event1.jpg" class="event1" alt="Statue Of Immanuel Lee">
+                <span class="eventtitles">Statue of Immanuel Lee</span>
+                <p class="eventtext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis optio architecto nulla magnam tenetur enim ipsa eaque aspernatur, et quidem ducimus inventore maxime atque doloremque quo quasi eius. Similique, architecto.</p>
+            </div>
+            <div class="even eve2">
+                <img src="media/event2.jpg" class="event2" alt="Roma Stadium">
+                <span class="eventtitles">Roma vs Juventus</span>
+                <p class="eventtext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis optio architecto nulla magnam tenetur enim ipsa eaque aspernatur, et quidem ducimus inventore maxime atque doloremque quo quasi eius. Similique, architecto.</p>
+            </div>
+            <div class="even  eve3">  
+                 <img src="media/event3.jpg" class="event3" alt="Faenza Dirtbike Competition">
+                 <span class="eventtitles">Faenza Dirtbike Competition</span>
+                 <p class="eventtext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis optio architecto nulla magnam tenetur enim ipsa eaque aspernatur, et quidem ducimus inventore maxime atque doloremque quo quasi eius. Similique, architecto.</p>
+            </div>
+        </div>  
+    </div>
+</div>
+</div>
 </body>
 </html>

@@ -4,6 +4,12 @@ $colors: (
   home-gradient1: #803838,
   home-gradient2: #1f0606,
 );
+$smallphone: 300px;
+$phoneportrait: 492px;
+$phonelandscape: 670px;
+$tablet: 768px;
+$desktop: 1024px;
+$largedesktop: 1200px;
 
 @function color($color-name) {
   @return map-get($colors, $color-name);
