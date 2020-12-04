@@ -4,8 +4,16 @@ h1 {
 
 .header-background {
   height: 100vh;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(128, 56, 56, 0.3)), to(rgba(31, 6, 6, 0.5))), url(/media/Night-img.jpg);
-  background-image: linear-gradient(rgba(128, 56, 56, 0.3), rgba(31, 6, 6, 0.5)), url(/media/Night-img.jpg);
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(128, 56, 56, 0.3)),
+      to(rgba(31, 6, 6, 0.5))
+    ),
+    url(/media/Night-img.jpg);
+  background-image: linear-gradient(rgba(128, 56, 56, 0.3), rgba(31, 6, 6, 0.5)),
+    url(/media/Night-img.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -14,14 +22,14 @@ h1 {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -69,9 +77,9 @@ h1 {
   color: black;
   background-color: #ffc6c6;
   -webkit-box-shadow: 0rem 0.3rem #490000;
-          box-shadow: 0rem 0.3rem #490000;
+  box-shadow: 0rem 0.3rem #490000;
   -webkit-transform: scale(1.13);
-          transform: scale(1.13);
+  transform: scale(1.13);
 }
 
 @media only screen and (max-width: 700px) {
@@ -121,18 +129,18 @@ h1 {
 
 .navbar {
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   align-items: center;
   background-color: #2a0202;
   color: #ddd;
@@ -195,8 +203,8 @@ label {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
 }
 
 .italyimage1 {
@@ -205,8 +213,8 @@ label {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .visititalia {
@@ -215,11 +223,11 @@ label {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   font-family: "Dancing Script", cursive;
 }
 
@@ -270,17 +278,25 @@ label {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   border: 0.3vw solid #e6e6e6;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(31, 6, 6, 0.5)), to(rgba(31, 6, 6, 0.5))), url(media/vacationtoremeber.jpg);
-  background-image: linear-gradient(rgba(31, 6, 6, 0.5), rgba(31, 6, 6, 0.5)), url(media/vacationtoremeber.jpg);
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(31, 6, 6, 0.5)),
+      to(rgba(31, 6, 6, 0.5))
+    ),
+    url(media/vacationtoremeber.jpg);
+  background-image: linear-gradient(rgba(31, 6, 6, 0.5), rgba(31, 6, 6, 0.5)),
+    url(media/vacationtoremeber.jpg);
   background-size: cover;
 }
 
@@ -301,33 +317,36 @@ label {
   margin-bottom: 1vw;
 }
 
-.relative {
-  position: relative;
-}
-
 .stripes {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   height: 100vh;
   width: 100%;
+  overflow: visible;
 }
 
 .stripe {
   width: 33.33333333%;
   height: 100vh;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(31, 6, 6, 0.5)), to(rgba(31, 6, 6, 0.5)));
-  background-image: linear-gradient(rgba(31, 6, 6, 0.5), rgba(31, 6, 6, 0.5));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(rgba(31, 6, 6, 0.5))
+  );
+  background-image: linear-gradient(rgba(31, 6, 6, 0.5));
 }
 
 .stripe {
@@ -348,27 +367,33 @@ label {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 94%;
   height: 90vh;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(42, 2, 2, 0.9)), to(rgba(42, 2, 2, 0.9)));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(rgba(42, 2, 2, 0.9)),
+    to(rgba(42, 2, 2, 0.9))
+  );
   background-image: linear-gradient(rgba(42, 2, 2, 0.9), rgba(42, 2, 2, 0.9));
   top: 5%;
   left: 3%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   display: flex;
   align-items: center;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   -ms-flex-direction: column;
-      flex-direction: column;
+  flex-direction: column;
 }
 
 .eventstitle {
@@ -379,8 +404,8 @@ label {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   font-family: "Dancing Script", cursive;
   text-align: center;
 }
@@ -394,8 +419,8 @@ label {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   font-family: "Josefin Sans", sans-serif;
   width: 65vw;
 }
@@ -405,14 +430,14 @@ label {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   width: 100%;
 }
 
@@ -448,23 +473,23 @@ label {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .eve1 {
-  border: 0.4vw solid green;
+  border: 0.8vh solid green;
 }
 
 .eve2 {
-  border: 0.4vw solid #e6e6e6;
+  border: 0.8vh solid #e6e6e6;
 }
 
 .eve3 {
-  border: 0.4vw solid #d65b5b;
+  border: 0.8vh solid #d65b5b;
 }
 
 .eventtitles {
@@ -475,12 +500,45 @@ label {
 
 .eve:hover .even:not(:hover) {
   -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 
 .even:hover {
   -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+@media only screen and (max-width: 600px) {
+  .stripes {
+    height: auto;
+  }
+  .eventholder {
+    height: auto;
+  }
+  .eve {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .even {
+    width: 95%;
+    margin: 3px;
+  }
+  .eventtext {
+    width: 90%;
+  }
+  .event {
+    width: 100%;
+  }
+  .eve:hover .even:not(:hover) {
+    -webkit-filter: none;
+    filter: none;
+  }
+  .even:hover {
+    -webkit-transform: none;
+    transform: none;
+  }
 }
 
 html,
@@ -489,6 +547,6 @@ body {
   margin: 0 auto;
   font-size: 62.5%;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 /*# sourceMappingURL=main.css.map */
