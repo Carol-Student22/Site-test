@@ -1,0 +1,72 @@
+@import "_variables";
+@import "_mixins";
+
+.places-to-visit {
+  width: 100vw;
+  background-color: orange;
+}
+
+.places-to-visit-head {
+  margin: auto;
+  background-color: orchid;
+  border: peru solid 1rem;
+  width: 80rem;
+  padding: 2rem 1rem 2rem 1rem; //top right bottom left
+  overflow: hidden;
+  text-align: center;
+
+  @media screen and (max-width: $tablet) {
+    width: 70vw;
+  }
+  @media screen and (max-width: $desktop) and (min-width: $tablet) {
+    width: 70rem;
+  }
+}
+.places-to-visit-title {
+  margin: 0 1rem 1rem 1rem;
+  font-size: 5rem;
+  background-color: rgb(182, 27, 27);
+}
+
+.places-to-visit-text {
+  margin: 1rem 1rem 0 1rem;
+  font-size: 2rem;
+  background-color: pink;
+}
+
+.cities-row {
+  display: inline-block;
+  @include flex-row-center;
+}
+
+.cities-gallery {
+  @include flex-items_text-center;
+  margin: auto;
+  background-color: salmon;
+  width: 90rem;
+  height: 100vh;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.place-card {
+  height: 30rem;
+  min-width: 20rem;
+  max-width: 25rem;
+  display: inline-block;
+  background-color: powderblue;
+}
+
+.place-1 {
+  font-size: 3rem;
+  background-color: sandybrown;
+}
+
+.place-2 {
+  font-size: 3rem;
+}
+
+.place-3 {
+  font-size: 3rem;
+}

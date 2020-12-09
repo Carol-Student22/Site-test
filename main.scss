@@ -1,0 +1,11 @@
+@import "_places-to-visit.scss";
+@import "_mixins.scss";
+@import "_variables.scss";
+
+html,
+body {
+  padding: 0;
+  margin: 0 auto;
+  font-size: 62.5%;
+  box-sizing: border-box;
+}

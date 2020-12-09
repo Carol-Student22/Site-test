@@ -1,0 +1,25 @@
+$colors: (
+  navbar: #2a0202,
+  primary: #ddd,
+  home-gradient1: #803838,
+  home-gradient2: #1f0606,
+);
+
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}
+
+//screen-size
+$smallphone: 300px;
+$phoneportrait: 492px;
+$phonelandscape: 670px;
+$tablet: 768px;
+$desktop: 1024px;
+$largedesktop: 1200px;
+
+$mainFont: "Dancing Script", cursive;
+$textFont: "Josefin Sans", sans-serif;
+$home-head-light: #fffafa;
+$home-head-dark: #2b0000;
+
+$home-mainFont: "Roboto Slab", serif;

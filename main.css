@@ -1,0 +1,99 @@
+.places-to-visit {
+  width: 100vw;
+  background-color: orange;
+}
+
+.places-to-visit-head {
+  margin: auto;
+  background-color: orchid;
+  border: peru solid 1rem;
+  width: 80rem;
+  padding: 2rem 1rem 2rem 1rem;
+  overflow: hidden;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .places-to-visit-head {
+    width: 70vw;
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .places-to-visit-head {
+    width: 70rem;
+  }
+}
+
+.places-to-visit-title {
+  margin: 0 1rem 1rem 1rem;
+  font-size: 5rem;
+  background-color: #b61b1b;
+}
+
+.places-to-visit-text {
+  margin: 1rem 1rem 0 1rem;
+  font-size: 2rem;
+  background-color: pink;
+}
+
+.cities-row {
+  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  text-align: center;
+}
+
+.cities-gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin: auto;
+  background-color: salmon;
+  width: 90rem;
+  height: 100vh;
+  padding: 2rem;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.place-card {
+  height: 30rem;
+  min-width: 20rem;
+  max-width: 25rem;
+  display: inline-block;
+  background-color: powderblue;
+}
+
+.place-1 {
+  font-size: 3rem;
+  background-color: sandybrown;
+}
+
+.place-2 {
+  font-size: 3rem;
+}
+
+.place-3 {
+  font-size: 3rem;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0 auto;
+  font-size: 62.5%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/*# sourceMappingURL=main.css.map */
