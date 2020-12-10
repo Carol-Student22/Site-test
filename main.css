@@ -42,17 +42,17 @@
   position: relative;
   margin: 2rem auto;
   padding: 1rem;
+  width: 95vw;
   height: auto;
   background-color: rgba(255, 114, 114, 0.72);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
 }
 
 @media screen and (min-width: 1024px) {
@@ -65,8 +65,8 @@
   position: relative;
   overflow: hidden;
   display: inline-block;
-  margin: 1rem;
-  width: 50%;
+  margin: 0.3rem auto;
+  width: 100%;
   background-color: #fafafa;
   text-align: left;
   font-size: 1.6rem;
