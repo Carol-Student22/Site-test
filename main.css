@@ -1,5 +1,6 @@
 .places-to-visit {
   width: 100vw;
+  height: 100vh;
   background-color: orange;
 }
 
@@ -38,54 +39,37 @@
 }
 
 .cities-row {
-  display: inline-block;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  text-align: center;
-}
-
-.cities-gallery {
+  position: relative;
+  margin: 2rem auto;
+  padding: 1rem;
+  height: auto;
+  background-color: rgba(255, 114, 114, 0.72);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  text-align: center;
-  margin: auto;
-  background-color: salmon;
-  width: 90rem;
-  height: 100vh;
-  padding: 2rem;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .cities-row {
+    width: 100rem;
+  }
 }
 
 .place-card {
-  height: 30rem;
-  min-width: 20rem;
-  max-width: 25rem;
+  position: relative;
+  overflow: hidden;
   display: inline-block;
-  background-color: powderblue;
-}
-
-.place-1 {
-  font-size: 3rem;
-  background-color: sandybrown;
-}
-
-.place-2 {
-  font-size: 3rem;
-}
-
-.place-3 {
-  font-size: 3rem;
+  margin: 1rem;
+  width: 50%;
+  background-color: #fafafa;
+  text-align: left;
+  font-size: 1.6rem;
 }
 
 html,

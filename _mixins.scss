@@ -10,10 +10,10 @@
   text-align: center;
 }
 
-@mixin flex-items_text-center {
+@mixin flex-items-center {
   display: flex;
   justify-content: center;
-  text-align: center;
+  align-items: center;
 }
 
 @mixin flex-spacearound {
