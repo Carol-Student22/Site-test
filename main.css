@@ -1,6 +1,8 @@
 .places-to-visit {
-  background: -webkit-gradient(linear, left top, left bottom, from(#803838), to(#1f0606));
-  background: linear-gradient(#803838, #1f0606);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(128, 56, 56, 0.3)), to(rgba(31, 6, 6, 0.5))), url(/media/Night-img.jpg);
+  background-image: linear-gradient(rgba(128, 56, 56, 0.3), rgba(31, 6, 6, 0.5)), url(/media/Night-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100vw;
   height: auto;
   padding: 1rem 0 0.5rem 0;
@@ -8,8 +10,9 @@
 
 .places-to-visit-head {
   margin: auto;
-  background-color: orchid;
-  border: peru solid 1rem;
+  -webkit-backdrop-filter: blur(1rem) contrast(0.5);
+          backdrop-filter: blur(1rem) contrast(0.5);
+  border: #1f0606 solid 0.3rem;
   width: 80rem;
   padding: 2rem 1rem 2rem 1rem;
   overflow: hidden;
@@ -31,7 +34,7 @@
 .places-to-visit-title {
   margin: 0 1rem 1rem 1rem;
   font-size: 5rem;
-  background-color: #b61b1b;
+  color: #fffafa;
 }
 
 @media screen and (max-width: 1024px) {
@@ -42,8 +45,14 @@
 
 .places-to-visit-text {
   margin: 1rem 1rem 0 1rem;
-  font-size: 2rem;
-  background-color: pink;
+  font-size: 2.5rem;
+  color: whitesmoke;
+}
+
+@media screen and (max-width: 1024px) {
+  .places-to-visit-text {
+    font-size: 2rem;
+  }
 }
 
 .cities-row {
@@ -52,7 +61,7 @@
   padding: 1rem;
   width: 95vw;
   height: auto;
-  background-color: rgba(255, 114, 114, 0.72);
+  background-color: rgba(41, 11, 11, 0.933);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -398,7 +407,7 @@
 }
 
 .place-card5 .place-hover-text {
-  color: white;
+  color: #1f0606;
 }
 
 html,

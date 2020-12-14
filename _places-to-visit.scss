@@ -2,7 +2,13 @@
 @import "_mixins";
 
 .places-to-visit {
-  background: linear-gradient(color(home-gradient1), color(home-gradient2));
+  background-image: linear-gradient(
+      rgba(color(home-gradient1), 0.3),
+      rgba(color(home-gradient2), 0.5)
+    ),
+    url(/media/Night-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100vw;
   height: auto;
   padding: 1rem 0 0.5rem 0;
@@ -10,8 +16,8 @@
 
 .places-to-visit-head {
   margin: auto;
-  background-color: orchid;
-  border: peru solid 1rem;
+  backdrop-filter: blur(1rem) contrast(0.5);
+  border: (color(home-gradient2)) solid 0.3rem;
   width: 80rem;
   padding: 2rem 1rem 2rem 1rem; //top right bottom left
   overflow: hidden;
@@ -27,7 +33,7 @@
 .places-to-visit-title {
   margin: 0 1rem 1rem 1rem;
   font-size: 5rem;
-  background-color: rgb(182, 27, 27);
+  color: $home-head-light;
 
   @media screen and (max-width: $desktop) {
     font-size: 3rem;
@@ -36,8 +42,11 @@
 
 .places-to-visit-text {
   margin: 1rem 1rem 0 1rem;
-  font-size: 2rem;
-  background-color: pink;
+  font-size: 2.5rem;
+  color: (color(primary));
+  @media screen and (max-width: $desktop) {
+    font-size: 2rem;
+  }
 }
 
 .cities-gallery {
@@ -49,7 +58,8 @@
   padding: 1rem;
   width: 95vw;
   height: auto;
-  background-color: rgba(255, 114, 114, 0.72);
+  background-color: color(place-light);
+
   @include flex-col-center;
   justify-content: space-around;
 
@@ -331,7 +341,6 @@
     opacity: 1;
   }
 }
-
 .place-card5 .place-hover-text {
-  color: white;
+  color: color(home-gradient2);
 }

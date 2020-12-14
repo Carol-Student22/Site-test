@@ -1,8 +1,9 @@
 $colors: (
   navbar: #2a0202,
-  primary: #ddd,
+  primary: rgb(245, 245, 245),
   home-gradient1: #803838,
   home-gradient2: #1f0606,
+  place-light: rgba(41, 11, 11, 0.933),
 );
 
 @function color($color-name) {
