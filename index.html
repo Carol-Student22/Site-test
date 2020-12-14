@@ -7,17 +7,75 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Josefin+Sans&family=Roboto+Slab:wght@800;900&family=Bebas+Neue&display=swap" rel="stylesheet">   
     <link rel="preconnect" href="https://fonts.gstatic.com">
-
 </head>
-<body>
-    <section class="places-to-visit"> <!--Main-->
+<body> 
+<section class="navbar">
+    <div class="logo">
+        <img class="italyimage1"src="italy.jpeg" alt="">
+        <span class="visititalia">Visit Italia</span>
+    </div>
+<div class="menu">
+    <label for="toggle">&#9776</label>
+    <input type="checkbox" id="toggle"/>
+    <div class="navigation">
+        <a class="down"  href="#home">Home</a>
+        <a class="down line" href="#events">Events</a>
+        <a class="down" href="#placestovisit">Places to Visit</a>
+        <a class="down line" href="#food">Food</a>
+        <a href="#aboutus">About Us</a>
+    </div>
+</div>
+</section>
+    <section id="home" class="header" aria-label="Home Page. Background Image of  A Nigltly View of Italy.">
+        <div class="header-background" >
+            <h1 class="header-primary-main">Italy</h1>
+            <h1 class="header-primary-sub">"Lorem ipsum dolor sit amet consectetur adipisicing elit."</h1> 
+           
+           <h2> <a href="#" class="header-main-btn header-primary-btn" aria-label="Read More About Italy">Read More!</a> </h2>
+           
+        </div> 
+    
+    </section>
+
+<section class="eventsection" id="events">
+    <div class="statement">
+        <span class="vacationtoremember">A Vacation to Remember</span>
+        <p  class="quote">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti inventore voluptate error ipsam sit dicta officia aperiam, in distinctio necessitatibus nam voluptas tenetur sunt, nobis reprehenderit assumenda beatae fugiat qui? </p>
+        <span class="italynews">~The Italy News</span>
+    </div>
+    <div class="eventholder" alt="Venice, Italy Image">
+        <div class="events">
+            <span class="eventstitle">Events</span>
+        <span class="eventsub">Italy is a very lively country with many places to adventure to and admire. Here are some of the upcoming events in Italy.</span>
+        <div class="eve">
+            <div class="even eve1">
+                <img src="media/event1.jpg" class="event event1" alt="Statue Of Immanuel Lee">
+                <span class="eventtitles">Statue of Immanuel Lee</span>
+                <p class="eventtext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis optio architecto nulla magnam tenetur enim ipsa eaque aspernatur, et quidem ducimus inventore maxime atque doloremque quo quasi eius. Similique, architecto.</p>
+            </div>
+            <div class="even eve2">
+                <img src="media/event2.jpg" class="event event2" alt="Roma Stadium">
+                <span class="eventtitles">Roma vs Juventus</span>
+                <p class="eventtext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis optio architecto nulla magnam tenetur enim ipsa eaque aspernatur, et quidem ducimus inventore maxime atque doloremque quo quasi eius. Similique, architecto.</p>
+            </div>
+            <div class="even  eve3">  
+                 <img src="media/event3.jpg" class="event event3" alt="Faenza Dirtbike Competition">
+                 <span class="eventtitles">Faenza Dirtbike Competition</span>
+                 <p class="eventtext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis optio architecto nulla magnam tenetur enim ipsa eaque aspernatur, et quidem ducimus inventore maxime atque doloremque quo quasi eius. Similique, architecto.</p>
+            </div>
+        </div> 
+        </div> 
+    </div>
+</section>
+
+
+    <section class="places-to-visit" id="placestovisit"> <!--Main-->
         <div class="places-to-visit-head">
             <h1 class="places-to-visit-title">Places to Visit </h1>
             <h2 class="places-to-visit-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe quam explicabo similique consectetur facilis obcaecati nihil, voluptatum eveniet ullam qui, deleniti exercitationem dolorem facere totam tempora illum distinctio laudantium. </h2>
         </div> <!--places...head-->
 
-        <div class="cities-gallery"> <!-- container -->
-            <div class="cities-row">
+            <div class="cities-row"><!-- container -->
                 <div class="place-card place-card1">
                     <div class="place-nohover">
                         <h2 class="place-city-head">The Roman Colosseum</h2>
@@ -60,8 +118,7 @@
                         <iframe class="place-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2880.9862151769958!2d11.253771515501647!3d43.773144979117404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132a5403bfe22ff5%3A0x5591438487aaf1f5!2sCathedral%20of%20Santa%20Maria%20del%20Fiore!5e0!3m2!1sen!2sus!4v1607717077149!5m2!1sen!2sus" width="280" height="320" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                         <div class="place-hover-text">
                             <h2 class="place-hover-head">Cathedral of Santa Maria del Fiore</h2>
-                            <p class="place-hover-sub">All he could think about was how it would all end. There was still a bit of uncertainty in the equation, but the basics were there for anyone to see. No matter how much he tried to see the positive, it wasn't anywhere to be seen. The end was coming and it wasn't going to be pretty.
-</p>
+                            <p class="place-hover-sub">All he could think about was how it would all end. There was still a bit of uncertainty in the equation, but the basics were there for anyone to see. No matter how much he tried to see the positive, it wasn't anywhere to be seen. The end was coming and it wasn't going to be pretty.</p>
                         </div>
                         
                     </div> <!--hover-->
@@ -77,8 +134,7 @@
                         <iframe class="place-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3027.8404876280397!2d14.600590365402569!3d40.63339962934052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x133b95adc34c71a1%3A0x4ce8cf14c94f4cdc!2sAmalfi%20Coast!5e0!3m2!1sen!2sus!4v1607716422896!5m2!1sen!2sus" width="280" height="320" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                         <div class="place-hover-text">
                             <h2 class="place-hover-head">Amalfi Coast</h2>
-                            <p class="place-hover-sub">All he could think about was how it would all end. There was still a bit of uncertainty in the equation, but the basics were there for anyone to see. No matter how much he tried to see the positive, it wasn't anywhere to be seen. The end was coming and it wasn't going to be pretty.
-</p>
+                            <p class="place-hover-sub">All he could think about was how it would all end. There was still a bit of uncertainty in the equation, but the basics were there for anyone to see. No matter how much he tried to see the positive, it wasn't anywhere to be seen. The end was coming and it wasn't going to be pretty.</p>
                         </div>
                         
                     </div> <!--hover-->
@@ -101,7 +157,6 @@
                 </div> <!--Card 5-->
 
             </div>
-      </div> <!--cities-gallery--> 
     </section> <!--main-->
 </body>
 </html>
