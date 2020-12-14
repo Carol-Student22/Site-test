@@ -1,0 +1,113 @@
+@import "_variables.scss";
+
+.navbar {
+  align-items: center;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: (color(navbar));
+  color: (color(primary));
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.menu {
+  text-align: center;
+  height: 70px;
+}
+
+.navigation {
+  display: flex;
+  color: (color(primary));
+  font-size: 2.2rem;
+  font-family: $textFont;
+  padding: 13px 10px;
+}
+
+.navigation a {
+  clear: right;
+  font-family: $textFont;
+  text-decoration: none;
+  padding: 10px 10px;
+  text-align: center;
+  color: (color(primary));
+}
+
+label {
+  margin: 0 40px 0 0;
+  font-size: 26px;
+  line-height: 70px;
+  display: none;
+  width: 22px;
+  float: right;
+}
+
+#toggle {
+  display: none;
+}
+
+.navigation a:hover {
+  background: (color(primary));
+  color: (color(navbar));
+}
+
+.line {
+  border-left: 0.5vh (color(primary)) solid;
+  border-right: 0.5vh (color(primary)) solid;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+}
+
+.italyimage1 {
+  height: 9vh;
+  display: flex;
+  align-items: center;
+}
+.visititalia {
+  font-size: 6vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: $mainFont;
+}
+@media only screen and (max-width: 830px) {
+  label {
+    display: block;
+    margin: 0 20px 0 0;
+    cursor: pointer;
+  }
+  .navigation {
+    text-align: center;
+    width: 100%;
+    display: none;
+  }
+  .navigation a {
+    display: block;
+    margin: 0;
+    color: (color(primary));
+    background-color: (color(navbar));
+  }
+  #toggle:checked + .navigation {
+    display: block;
+  }
+  .line {
+    border: none;
+  }
+  .down {
+    border-bottom: 1px solid (color(primary));
+  }
+}
+@media only screen and (max-width: 500px) {
+  .visititalia {
+    font-size: 5vh;
+  }
+  .italyimage1 {
+    height: 7vh;
+  }
+}

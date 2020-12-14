@@ -1,0 +1,140 @@
+@import "_variables.scss";
+@import "_mixins.scss";
+
+.statement {
+  @include flex-col-center;
+  @include flex-spacearound;
+  position: relative;
+  background-color: (color(navbar));
+  color: (color(italy2));
+  font-family: $textFont;
+  border: 0.3vw solid (color(italy2));
+  background-image: linear-gradient(
+      rgba(color(home-gradient2), 0.5),
+      rgba(color(home-gradient2), 0.5)
+    ),
+    url(media/vacationtoremeber.jpg);
+  background-size: cover;
+}
+.vacationtoremember {
+  font-family: $mainFont;
+  font-size: 7vh;
+  margin-top: 1vw;
+}
+.quote {
+  margin-left: 2%;
+  margin-right: 2%;
+  font-size: 3vh;
+}
+.italynews {
+  font-size: 3vh;
+  margin-bottom: 1vw;
+}
+
+.eventholder {
+  @include flex-spacearound;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(color(home-gradient2), 0.6)),
+    url(media/eventsbackground.jpg);
+  background-size: cover;
+}
+
+.events {
+  @include flex-col-center;
+  @include flex-spacearound;
+  height: 93%;
+  width: 90%;
+  background-image: linear-gradient(rgba(color(navbar), 0.95));
+  border-radius: 10vh;
+}
+.eventstitle {
+  font-size: 10rem;
+  color: (color(italy2));
+  font-family: $mainFont;
+  text-align: center;
+}
+.eventsub {
+  text-align: center;
+  font-size: 3vh;
+  color: (color(italy2));
+  font-family: $textFont;
+  width: 65vw;
+  padding-bottom: 1vw;
+}
+
+.eve {
+  @include flex-spacearound;
+  flex-direction: row;
+  width: 100%;
+}
+.even {
+  transition: all 0.4s;
+}
+.event {
+  width: 25vw;
+  border-radius: 5vh;
+}
+.eventtext {
+  width: 22vw;
+  color: (color(italy2));
+  font-size: 2.5vh;
+  text-align: center;
+  font-family: $textFont;
+}
+.even {
+  @include flex-col-center;
+  align-items: center;
+  background-color: (color(home-gradient2));
+  border-radius: 6vh;
+}
+
+.eve1 {
+  border: 0.8vh solid (color(italy1));
+}
+.eve2 {
+  border: 0.8vh solid (color(italy2));
+}
+.eve3 {
+  border: 0.8vh solid (color(italy3));
+}
+
+.eventtitles {
+  color: (color(italy2));
+  font-family: $mainFont;
+  font-size: 3vh;
+}
+.even:hover {
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width: 950px) {
+  .eventholder {
+    width: 100%;
+    height: fit-content;
+  }
+  .eve {
+    flex-direction: column;
+  }
+  .even {
+    width: 80vw;
+    margin-bottom: 2vh;
+  }
+  .eventtitles {
+    font-size: 5vh;
+  }
+  .eventtext {
+    width: 90%;
+    font-size: 3vh;
+  }
+  .event {
+    width: 100%;
+  }
+  .eve:hover .even:not(:hover) {
+    filter: none;
+  }
+  .even:hover {
+    transform: none;
+  }
+}
