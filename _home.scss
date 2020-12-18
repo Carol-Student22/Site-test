@@ -6,10 +6,10 @@ h1 {
 .header-background {
   height: 100vh;
   background-image: linear-gradient(
-      rgba(color(home-gradient1), 0.1),
-      rgba(color(home-gradient2), 0.1)
+      rgba(color(home-gradient1), 0.3),
+      rgba(color(home-gradient2), 0.5)
     ),
-    url(/media/Night.Italy.jpg);
+    url(/media/Night-img.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
