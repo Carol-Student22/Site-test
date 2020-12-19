@@ -4,14 +4,23 @@
 .gallery {
   display: block;
   background-color: color(gal-backg);
+  padding: 2rem 0 2rem 0;
 }
 
 .gallery-title {
   font-size: 7rem;
-  margin: 2rem 0 2rem 0;
+  margin: 0 0 2rem 0;
   text-align: center;
   color: white;
   font-family: $mainFont;
+
+  @media screen and (max-width: $phonelandscape) {
+    font-size: 6rem;
+  }
+
+  @media screen and (max-width: $smallphone) {
+    font-size: 4rem;
+  }
 }
 
 .gallery-wrap {
@@ -19,9 +28,14 @@
   width: 100%;
   height: 80vh;
   overflow: hidden;
+
+  @media screen and (max-width: $phonelandscape) {
+    @include flex-col-center;
+  }
 }
 
 .gal-pic {
+  user-select: none;
   flex: 1;
   height: 100%;
   background-position: center;
