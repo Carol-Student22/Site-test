@@ -1,5 +1,45 @@
-
 @import "_variables.scss";
+@import "_mixins.scss";
 .gallery {
   display: block;
+}
+
+.gallery-wrap {
+  @include flex-row-center;
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+}
+
+.gal-pic {
+  flex: 1;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: flex 0.8s ease;
+}
+
+.gal-pic:hover {
+  flex: 7;
+}
+
+.gal-pic1 {
+  background-image: url(media/Gallery-Dolomites.jpg);
+}
+
+.gal-pic2 {
+  background-image: url(media/Gallery-Lago.di.Braies.jpg);
+}
+
+.gal-pic3 {
+  background-image: url(media/Gallery-Lake.Iseo.Island.jpg);
+}
+
+.gal-pic4 {
+  background-image: url(media/Gallery-MarmoreWaterfalls.jpg);
+}
+
+.gal-pic5 {
+  background-image: url(media/Gallery-Saturnia.jpg);
 }
