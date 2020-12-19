@@ -468,8 +468,8 @@ label {
 }
 
 .places-to-visit {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(46, 24, 24, 0.5)), to(rgba(34, 5, 5, 0.7))), url(/media/Night-img.jpg);
-  background-image: linear-gradient(rgba(46, 24, 24, 0.5), rgba(34, 5, 5, 0.7)), url(/media/Night-img.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(46, 24, 24, 0.5)), to(#130000)), url(/media/Night-img.jpg);
+  background-image: linear-gradient(rgba(46, 24, 24, 0.5), #130000), url(/media/Night-img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
