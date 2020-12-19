@@ -1,5 +1,12 @@
 .gallery {
   display: block;
+  background-color: gal-backg;
+}
+
+.gallery-title {
+  font-size: 7rem;
+  margin: 2rem 0 2rem 0;
+  text-align: center;
 }
 
 .gallery-wrap {
