@@ -853,6 +853,103 @@ label {
   background-image: url(media/Pompeii2.jpg);
 }
 
+.gallery {
+  display: block;
+  background-color: #000000;
+  padding: 2rem 0 2rem 0;
+}
+
+.gallery-title {
+  font-size: 7rem;
+  margin: 0 0 2rem 0;
+  text-align: center;
+  color: white;
+  font-family: "Dancing Script", cursive;
+}
+
+@media screen and (max-width: 670px) {
+  .gallery-title {
+    font-size: 6rem;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .gallery-title {
+    font-size: 4rem;
+  }
+}
+
+.gallery-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  text-align: center;
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 670px) {
+  .gallery-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+}
+
+.gal-pic {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: -webkit-box-flex 0.8s ease;
+  transition: -webkit-box-flex 0.8s ease;
+  transition: flex 0.8s ease;
+  transition: flex 0.8s ease, -webkit-box-flex 0.8s ease, -ms-flex 0.8s ease;
+}
+
+.gal-pic:hover {
+  -webkit-box-flex: 7;
+      -ms-flex: 7;
+          flex: 7;
+}
+
+.gal-pic1 {
+  background-image: url(media/Gallery-Dolomites.jpg);
+}
+
+.gal-pic2 {
+  background-image: url(media/Gallery-Lago.di.Braies.jpg);
+}
+
+.gal-pic3 {
+  background-image: url(media/Gallery-Lake.Iseo.Island.jpg);
+}
+
+.gal-pic4 {
+  background-image: url(media/Gallery-MarmoreWaterfalls.jpg);
+}
+
+.gal-pic5 {
+  background-image: url(media/Gallery-Saturnia.jpg);
+}
+
 html,
 body {
   padding: 0;

@@ -1,0 +1,69 @@
+@import "_variables.scss";
+@import "_mixins.scss";
+
+.gallery {
+  display: block;
+  background-color: color(gal-backg);
+  padding: 2rem 0 2rem 0;
+}
+
+.gallery-title {
+  font-size: 7rem;
+  margin: 0 0 2rem 0;
+  text-align: center;
+  color: white;
+  font-family: $mainFont;
+
+  @media screen and (max-width: $phonelandscape) {
+    font-size: 6rem;
+  }
+
+  @media screen and (max-width: $smallphone) {
+    font-size: 4rem;
+  }
+}
+
+.gallery-wrap {
+  @include flex-row-center;
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+
+  @media screen and (max-width: $phonelandscape) {
+    @include flex-col-center;
+  }
+}
+
+.gal-pic {
+  user-select: none;
+  flex: 1;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: flex 0.8s ease;
+}
+
+.gal-pic:hover {
+  flex: 7;
+}
+
+.gal-pic1 {
+  background-image: url(media/Gallery-Dolomites.jpg);
+}
+
+.gal-pic2 {
+  background-image: url(media/Gallery-Lago.di.Braies.jpg);
+}
+
+.gal-pic3 {
+  background-image: url(media/Gallery-Lake.Iseo.Island.jpg);
+}
+
+.gal-pic4 {
+  background-image: url(media/Gallery-MarmoreWaterfalls.jpg);
+}
+
+.gal-pic5 {
+  background-image: url(media/Gallery-Saturnia.jpg);
+}
