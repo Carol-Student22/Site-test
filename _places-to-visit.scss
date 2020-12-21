@@ -19,7 +19,7 @@
   margin: auto;
   backdrop-filter: blur(1rem) contrast(0.5);
   border: (color(home-gradient2)) solid 0.3rem;
-  width: 95rem;
+  width: 80vw;
   padding: 2rem 1rem 2rem 1rem; //top right bottom left
   overflow: hidden;
   text-align: center;
@@ -27,19 +27,22 @@
   @media screen and (max-width: $tablet) {
     width: 70vw;
   }
-  @media screen and (max-width: $largedesktop) {
-    width: 80vw;
+  @media screen and (min-width: $largedesktop) {
+    width: 65vw;
   }
 }
 .places-to-visit-title {
   margin: 0 1rem 1rem 1rem;
-  font-size: 8rem;
+  font-size: 6rem;
   font-family: $placesMain;
   letter-spacing: 0.3rem;
   color: $home-head-light;
 
-  @media screen and (max-width: $desktop) {
-    font-size: 6rem;
+  @media screen and (max-width: $tablet) {
+    font-size: 4rem;
+  }
+  @media screen and (min-width: $largedesktop) {
+    font-size: 10rem;
   }
 }
 
@@ -56,7 +59,7 @@
   position: relative;
   margin: 1rem auto;
   padding: 1rem;
-  width: 120rem;
+  width: 90vw;
   height: auto;
   background-color: color(place-light);
 
@@ -66,12 +69,8 @@
   @media screen and (max-width: $desktop) {
     width: 90vw;
   }
-  @media screen and (max-width: $largedesktop) {
-    width: 90vw;
-  }
-
-  @media screen and (min-width: 2500px) {
-    width: 55vw;
+  @media screen and (min-width: $largedesktop) {
+    width: 75vw;
   }
 }
 

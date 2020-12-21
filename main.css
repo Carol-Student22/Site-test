@@ -482,7 +482,7 @@ label {
   -webkit-backdrop-filter: blur(1rem) contrast(0.5);
           backdrop-filter: blur(1rem) contrast(0.5);
   border: #1f0606 solid 0.3rem;
-  width: 95rem;
+  width: 80vw;
   padding: 2rem 1rem 2rem 1rem;
   overflow: hidden;
   text-align: center;
@@ -494,23 +494,29 @@ label {
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .places-to-visit-head {
-    width: 80vw;
+    width: 65vw;
   }
 }
 
 .places-to-visit-title {
   margin: 0 1rem 1rem 1rem;
-  font-size: 8rem;
+  font-size: 6rem;
   font-family: "Bebas Neue", cursive;
   letter-spacing: 0.3rem;
   color: #fffafa;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
   .places-to-visit-title {
-    font-size: 6rem;
+    font-size: 4rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .places-to-visit-title {
+    font-size: 10rem;
   }
 }
 
@@ -530,7 +536,7 @@ label {
   position: relative;
   margin: 1rem auto;
   padding: 1rem;
-  width: 120rem;
+  width: 90vw;
   height: auto;
   background-color: rgba(41, 11, 11, 0.933);
   display: -webkit-box;
@@ -551,15 +557,9 @@ label {
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .cities-row {
-    width: 90vw;
-  }
-}
-
-@media screen and (min-width: 2500px) {
-  .cities-row {
-    width: 55vw;
+    width: 75vw;
   }
 }
 
