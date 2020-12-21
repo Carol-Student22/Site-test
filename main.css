@@ -731,7 +731,7 @@ label {
 
 @media screen and (min-width: 2500px) {
   .place-city-head {
-    font-size: 5rem;
+    font-size: 4rem;
   }
 }
 
@@ -749,7 +749,7 @@ label {
 
 @media screen and (min-width: 2500px) {
   .place-city-sub {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 }
 
