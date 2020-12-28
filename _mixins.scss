@@ -1,0 +1,50 @@
+@mixin flex-col-center {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+@mixin flex-row-center {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+
+@mixin flex-items-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-spacearound {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@mixin flex-col-items_content-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-row-items_content-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-row-items_space-between {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flex-items-start {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
