@@ -14,20 +14,22 @@
             <img class="italyimage1"src="italy.jpeg" alt="">
             <span class="visititalia">Visit Italia</span>
         </div>
-        <div class="menu">
-            <label for="toggle">&#9776</label>
+        <div id="menu">
+            <label for="toggle">&#9776</label> 
             <input type="checkbox" id="toggle"/>
             <div class="navigation">
                 <a class="down"  href="#home">Home</a>
                 <a class="down line" href="#events">Events</a>
-                <a class="down" href="#placestovisit">Places to Visit</a>
-                <a class="down line" href="#food">Food</a>
+                <a class="down" href="#placestovisit">Places to Visit</a> 
+                <a class="down line" href="#cities">Cities</a>
+                <a class="down" href="#food">Food</a>
+                <a class="down line" href="#landmarks">Landmarks</a>
                 <a href="#aboutus">About Us</a>
             </div>
         </div>
     </section>
 
-    <section id="home" class="header" aria-label="Home Page. Background Image of  A Nigltly View of Italy.">
+      <section id="home"  aria-label="Home Page. Background Image of  A Nigltly View of Italy.">
         <div class="header-background" >
             <h1 class="header-primary header-primary-main">Italy</h1>
             <h1 class="header-primary header-primary-sub">"Lorem ipsum dolor sit amet consectetur adipisicing elit."</h1> 
@@ -38,7 +40,7 @@
     
     </section>
 
-    <section class="eventsection" id="events">
+    <section id="events">
         <div class="statement">
             <span class="vacationtoremember">A Vacation to Remember</span>
             <p  class="quote">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti inventore voluptate error ipsam sit dicta officia aperiam, in distinctio necessitatibus nam voluptas tenetur sunt, nobis reprehenderit assumenda beatae fugiat qui? </p>
@@ -50,17 +52,17 @@
             <span class="eventsub">Italy is a very lively country with many places to adventure to and admire. Here are some of the upcoming events in Italy.</span>
             <div class="eve">
                 <div class="even eve1">
-                    <img src="media/event1.jpg" class="event event1" alt="Statue Of Immanuel Lee">
+                    <img src="media/event1.jpg" class="event" alt="Statue Of Immanuel Lee">
                     <span class="eventtitles">Statue of Immanuel Lee</span>
                     <p class="eventtext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis optio architecto nulla magnam tenetur enim ipsa eaque aspernatur, et quidem ducimus inventore maxime atque doloremque quo quasi eius. Similique, architecto.</p>
                 </div>
                 <div class="even eve2">
-                    <img src="media/event2.jpg" class="event event2" alt="Roma Stadium">
+                    <img src="media/event2.jpg" class="event" alt="Roma Stadium">
                     <span class="eventtitles">Roma vs Juventus</span>
                     <p class="eventtext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis optio architecto nulla magnam tenetur enim ipsa eaque aspernatur, et quidem ducimus inventore maxime atque doloremque quo quasi eius. Similique, architecto.</p>
                 </div>
                 <div class="even  eve3">  
-                    <img src="media/event3.jpg" class="event event3" alt="Faenza Dirtbike Competition">
+                    <img src="media/event3.jpg" class="event" alt="Faenza Dirtbike Competition">
                     <span class="eventtitles">Faenza Dirtbike Competition</span>
                     <p class="eventtext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis optio architecto nulla magnam tenetur enim ipsa eaque aspernatur, et quidem ducimus inventore maxime atque doloremque quo quasi eius. Similique, architecto.</p>
                 </div>
@@ -68,6 +70,7 @@
             </div> 
         </div>
     </section>
+
 
     <section class="places-to-visit" id="placestovisit"> <!--Main-->
         <div class="places-to-visit-head">
@@ -158,8 +161,61 @@
 
             </div>
     </section> <!--main-->
+    
+   <section id="food">
+    <div class="foodholder">
+      <div class="foodtext">
+         <h1 class="foodtitle">Italian Dishes</h1>
+         <p class="foodparagraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium pariatur accusamus, magnam dolores velit omnis, impedit culpa, eaque dicta ipsam saepe debitis eligendi perspiciatis voluptas nostrum necessitatibus quis dolore et!</p>
+      </div>
+      <div id="slider">
+        <input type="radio" name="slider" id="slide1" checked>
+        <input type="radio" name="slider" id="slide2">
+        <input type="radio" name="slider" id="slide3">
+        <input type="radio" name="slider" id="slide4">
+        <div id="slides">
+           <div id="overflow">
+              <div class="inner">
+                 <div class="slide">
+                    <div alt="pasta is an italian food" class="slide-content slide-content1">
+                       <h2>Pasta</h2>
+                    </div>
+                 </div>
+                 <div class="slide">
+                    <div alt="pizza is an italian food" class="slide-content slide-content2">
+                       <h2>Pizza</h2>
+                    </div>
+                 </div>
+                 <div class="slide">
+                    <div alt="lasagna is an italian food" class="slide-content slide-content3">
+                       <h2>Lasagna</h2>
+                    </div>
+                 </div>
+                 <div class="slide">
+                    <div alt="risotto is an italian food" class="slide-content slide-content4">
+                       <h2>Risotto</h2>
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </div>
+        <div id="controls">
+           <label for="slide1"></label>
+           <label for="slide2"></label>
+           <label for="slide3"></label>
+           <label for="slide4"></label>
+        </div>
+        <div id="bullets">
+           <label for="slide1"></label>
+           <label for="slide2"></label>
+           <label for="slide3"></label>
+           <label for="slide4"></label>
+        </div>
+     </div>
+   </div>
+   </section>
 
-    <section class="gallery">
+    <section id="landmarks" class="gallery">
         <h1 class="gallery-title">Landmarks of Italy</h1>
         <div class="gallery-wrap">
             <div class="gal-pic gal-pic1"> </div>
@@ -168,7 +224,7 @@
             <div class="gal-pic gal-pic4"></div>
             <div class="gal-pic gal-pic5"></div>
         </div>
-    </section>
-    
+    </section> <!--Gallery End-->
+
 </body>
 </html>

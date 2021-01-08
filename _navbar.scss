@@ -1,11 +1,7 @@
 @import "_variables.scss";
 
 .navbar {
-  align-items: center;
-  flex-direction: row;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include flex-row-items_space-between;
   background-color: (color(navbar));
   color: (color(primary));
   position: fixed;
@@ -14,7 +10,7 @@
   z-index: 100;
 }
 
-.menu {
+#menu {
   text-align: center;
   height: 70px;
 }
@@ -35,8 +31,7 @@
   text-align: center;
   color: (color(primary));
 }
-
-label {
+#menu label {
   margin: 0 40px 0 0;
   font-size: 26px;
   line-height: 70px;
@@ -71,13 +66,11 @@ label {
 }
 .visititalia {
   font-size: 6vh;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  @include flex-items-start;
   font-family: $mainFont;
 }
-@media only screen and (max-width: 830px) {
-  label {
+@media only screen and (max-width: 1150px) {
+  #menu label {
     display: block;
     margin: 0 20px 0 0;
     cursor: pointer;

@@ -1,0 +1,197 @@
+@import "_variables.scss";
+.foodholder {
+  height: auto;
+  background-image: linear-gradient(to bottom, rgba(color(navbar), 0.6)),
+    url(media/italianfood.jpg);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  border-top: gray 1vw solid;
+  border-bottom: gray 1vw solid;
+}
+.foodtext {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 80%;
+  color: (color(italy2));
+}
+.foodtitle {
+  font-size: 8vh;
+  font-family: $home-mainFont;
+}
+
+.foodparagraph {
+  display: flex;
+  font-size: 5vh;
+  text-align: center;
+  width: 95%;
+  font-family: $textFont;
+}
+
+#slider {
+  margin: 0 auto;
+  width: 56vh;
+  max-width: 100%;
+  text-align: center;
+  margin-bottom: 5vh;
+}
+#slider input[type="radio"] {
+  display: none;
+}
+#slider label {
+  cursor: pointer;
+  text-decoration: none;
+}
+#slides {
+  padding: 10px;
+  border: 3px solid (color(italy2));
+  background: (color(primary));
+  position: relative;
+  z-index: 1;
+}
+#overflow {
+  width: 100%;
+  overflow: hidden;
+}
+#slide1:checked ~ #slides .inner {
+  margin-left: 0;
+}
+#slide2:checked ~ #slides .inner {
+  margin-left: -100%;
+}
+#slide3:checked ~ #slides .inner {
+  margin-left: -200%;
+}
+#slide4:checked ~ #slides .inner {
+  margin-left: -300%;
+}
+#slides .inner {
+  transition: margin-left 800ms cubic-bezier(0.77, 0, 0.175, 1);
+  width: 400%;
+  line-height: 0;
+  height: 37vh;
+}
+#slides .slide {
+  width: 25%;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: (color(primary));
+}
+.food {
+  width: 100%;
+  height: 100%;
+}
+#controls {
+  margin: -180px 0 0 0;
+  width: 100%;
+  height: 50px;
+  z-index: 3;
+  position: relative;
+}
+#controls label {
+  transition: opacity 0.2s ease-out;
+  display: none;
+  width: 50px;
+  height: 50px;
+  opacity: 0.4;
+}
+#controls label:hover {
+  opacity: 1;
+}
+#slide1:checked ~ #controls label:nth-child(2),
+#slide2:checked ~ #controls label:nth-child(3),
+#slide3:checked ~ #controls label:nth-child(4),
+#slide4:checked ~ #controls label:nth-child(1) {
+  background-color: white;
+  float: right;
+  margin: 0 -50px 0 0;
+  display: block;
+  clip-path: polygon(77% 0, 100% 50%, 77% 100%, 50% 100%, 80% 50%, 50% 0);
+  height: 10vh;
+}
+#slide1:checked ~ #controls label:nth-last-child(1),
+#slide2:checked ~ #controls label:nth-last-child(4),
+#slide3:checked ~ #controls label:nth-last-child(3),
+#slide4:checked ~ #controls label:nth-last-child(2) {
+  background-color: white;
+  float: left;
+  margin: 0 0 0 -50px;
+  display: block;
+  clip-path: polygon(50% 0, 20% 50%, 50% 100%, 23% 100%, 0 50%, 23% 0);
+  height: 10vh;
+}
+#bullets {
+  margin: 150px 0 0;
+  text-align: center;
+}
+#bullets label {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background: (color(italy2));
+  margin: 0 10px;
+}
+#slide1:checked ~ #bullets label:nth-child(1),
+#slide2:checked ~ #bullets label:nth-child(2),
+#slide3:checked ~ #bullets label:nth-child(3),
+#slide4:checked ~ #bullets label:nth-child(4) {
+  background: (color(italy3));
+}
+.slide-content {
+  width: 60vh;
+  height: 40vh;
+  font-size: 3vw;
+  font-family: $mainFont;
+  background-size: cover;
+}
+.slide-content1 {
+  background-image: url(media/pasta.jpg);
+}
+.slide-content2 {
+  background-image: url(media/pizza.jpeg);
+}
+.slide-content3 {
+  background-image: url(media/lasagna.jpeg);
+}
+.slide-content4 {
+  background-image: url(media/risotto.jpeg);
+}
+
+@media only screen and (max-width: 1024px) {
+  .foodholder {
+    flex-direction: column;
+  }
+  .foodtext {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  #slider {
+    width: 60vw;
+  }
+  #slides .inner {
+    height: 40vw;
+  }
+  .slide-content {
+    width: 60vw;
+    height: 40vw;
+  }
+  .foodtitle {
+    font-size: 5vh;
+  }
+
+  .foodparagraph {
+    font-size: 3vh;
+  }
+}

@@ -28,3 +28,23 @@
   justify-content: center;
   align-items: center;
 }
+
+@mixin flex-row-items_content-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-row-items_space-between {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flex-items-start {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
