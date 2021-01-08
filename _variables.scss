@@ -10,11 +10,29 @@ $colors: (
   italy2: #e6e6e6,
   italy3: #d65b5b,
   gal-backg: #000000,
+  gray-backg-filter: rgba(160, 160, 160, 0.919),
+  gray-backg-filter2: rgba(130, 130, 130, 0.788),
 );
 
 @function color($color-name) {
   @return map-get($colors, $color-name);
 }
+
+//screen-size
+$smallphone: 300px;
+$phoneportrait: 492px;
+$phonelandscape: 670px;
+$tablet: 768px;
+$desktop: 1024px;
+$largedesktop: 1200px;
+
+$mainFont: "Dancing Script", cursive;
+$textFont: "Josefin Sans", sans-serif;
+$home-head-light: #fffafa;
+$home-head-dark: #2b0000;
+
+$home-mainFont: "Roboto Slab", serif;
+$placesMain: "Bebas Neue", cursive;
 
 //screen-size
 $smallphone: 300px;
